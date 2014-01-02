@@ -21,7 +21,7 @@ Buidling
 
 To build a deployable WAR file run
 
-   > mvn verify
+    > mvn verify
    
 This will produce the file `target/webapp-war.war`.
 
