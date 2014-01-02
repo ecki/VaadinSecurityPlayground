@@ -2,7 +2,8 @@ VAADIN Security Playground
 ==========================
 
 This is a project for researching various aspects related to VAADIN web framework related to
-typically security problems of web applications (especially XSS and CSRF).
+typically security problems of web applications (especially XSS and CSRF). It uses JSoup for
+HTML sanitation.
 
 https://github.com/ecki/VaadinSecurityPlayground
 
@@ -17,11 +18,9 @@ You can preview the app in the build in Jetty 8 by using:
 Alternatively deploying with run-on-server within Eclipse to Apache Tomcat 7 is also possible.
 
 This project can also be used as the source for a RedHat OpenShift (EWS2.0 aka Tomcat 7) source
-project.
+project (you need to add your .openshift/ directory).
 
 Demo Site: http://tomcat-ecki.rhcloud.com/
-
-*TODO*: Currently there is no filter implemented.
 
 Bernd
 
