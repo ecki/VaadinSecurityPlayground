@@ -11,18 +11,38 @@ Feel free to copy this code for any purpose.
 
 This Maven project currently builds a WAR file containing VAADIN and some libraries.
 
-You can preview the app in the build in Jetty 8 by using:
+Demo Site: http://tomcat-ecki.rhcloud.com/
+
+Greetings
+Bernd
+
+Buidling
+--------
+
+To build a deployable WAR file run
+
+   > mvn verify
+   
+This will produce the file `target/webapp-war.war`.
+
+You can also directly start a built-in Jetty 8 server, using:
 
     > mvn jetty:run
 
-Alternatively deploying with run-on-server within Eclipse to Apache Tomcat 7 is also possible.
+The application will then be reachable with http://localhost:8080/
+
+If you use Eclipse, you can also use the run-on-server function with a Apache Tomcat 7.
 
 This project can also be used as the source for a RedHat OpenShift (EWS2.0 aka Tomcat 7) source
 project (you need to add your .openshift/ directory).
 
-Demo Site: http://tomcat-ecki.rhcloud.com/
+Screenshots
+-----------
 
-Bernd
+![Demo Site with Firefox](https://raw.github.com/wiki/ecki/VaadinSecurityPlayground/images/screenshot-demo-firefox.png)
+
+See Also
+--------
 
 - http://vaadin.com
 - https://www.openshift.com/developers
