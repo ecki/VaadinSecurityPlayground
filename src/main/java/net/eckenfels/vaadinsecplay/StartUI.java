@@ -77,7 +77,7 @@ public class StartUI extends UI
         String START_TEXT = "<h1>test</h1>\n"+
                         "<p>normal <b>bold</b> <i>italic</i> <em>emphasis</em></p>\n"+
                         "<p><font color=\"red\" face=\"Courier New\">green</font> <span style=\"color: green\">red</span></p>";
-        inputProperty = new ObjectProperty<String>(START_TEXT, String.class);
+        inputProperty = new ObjectProperty<String>("", String.class);
 
         // Left Side
 
@@ -160,8 +160,11 @@ public class StartUI extends UI
             }
         });
 
+        // Kick off events
+
         leftArea.setImmediate(true);
         leftRichText.setImmediate(true);
+        inputProperty.setValue(START_TEXT);
 }
 
     protected void render(String v, Object f)
